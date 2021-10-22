@@ -39,7 +39,7 @@ class TestAnagramCheck():
 
     def test_wrong_input(self):
         """
-        Function should only accepts words without numbers (per convention).
+        Input must be strings.
 
         Currently unnecessary in the global scope of the script,
         as input() function converts everything to strings anyway.
@@ -55,9 +55,7 @@ class TestAnagramCheck():
     def test_words_with_numbers(self):
         """
         Function should only accepts words without numbers (per convention).
-
-        Currently unnecessary in the global scope of the script,
-        as input() function converts everything to strings anyway.
+        ValueError should be raised if numbers are present.
         """
 
         test_string = "1. FC Köln"
